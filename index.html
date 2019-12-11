@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>survey-form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <form id="survey-form">
+        <div id="main-div">
+            <section class="container">
+                <div class="hedline">
+                    <p id="description">What are your movie preferences?</p>
+
+                </div>
+                <div class="chec-1">
+                    <ul>
+                        <li><input type="checkbox" name="cat-1" value="action">Action</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Adventure</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Crime</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Drama</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Fantesy</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Historical</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Horror</li>
+                    </ul>
+                </div>
+                <div class="chec-2">
+                    <ul>
+                        <li><input type="checkbox" name="cat-1" value="action">Romanc</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Si-Fi</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Political</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Thriller</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Western</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Animation</li>
+                        <li><input type="checkbox" name="cat-1" value="action">Satire</li>
+                    </ul>
+                </div>
+                <div class="q-boxes">
+                    <p>What is your Favorite movie and actor</p>
+                    <input class="inf" type="text" placeholder="Movie input her">
+                    <input class="inf" type="text" placeholder="Actor input her">
+                </div>
+                <div class="gender">
+                    <p>What is your Gender:</p>
+                    <input type="radio" name="gender" value="male" required>Male
+                    <input type="radio" name="gender" value="male">Female
+                    <input type="radio" name="gender" value="male">Other
+                </div>
+                <div class="age">
+                    <p>What is your Birthday:</p>
+                    <input id="age" type="date" name="bday" value="bday" required>
+                </div>
+                <div class="name">
+                    <label id="name-label">
+                        <p>What is your Name:</p>
+                        <input class="name-f" id="name" type="text" placeholder="First Name" required>
+                        <input class="name-f" type="text" placeholder="Last Name" required>
+                    </label>
+                </div>
+
+                <div class="email">
+                    <label id="email-label">
+                        <p>What is your Email:</p>
+                        <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+                    </label>
+                </div>
+                <div id="sub">
+                    <input id="submit" type="submit" name="submit" name="Submit">
+                </div>
+                <div class="num">
+                    <label id="number-label">
+                        <p>How many hours do you spend<br> in front of a screen</p>
+                        <input id="number" type="number" name="quantity" min="0" max="24" placeholder="0-24">
+                    </label>
+                </div>
+                <div id="drop">
+                    <p>How many movies do <strong>you</strong><br> watch every day:</p>
+                    <select id="dropdown" name="test">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="text-a">
+                    <textarea rows="4" cols="25" placeholder="Something you whant to add?"></textarea>
+                </div>
+        </div>
+    </form>
+</body>
+
+</html>
